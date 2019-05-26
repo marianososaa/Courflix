@@ -1,0 +1,234 @@
+$color-fondo:  #141414;
+$fuente-principal: Helvetica Neue,Helvetica,Arial,sans-serif; 
+
+// ¡La funcion transform: scale(1.5) fue googleada! //
+// Hay medidas no respetadas ya que se me rompia el css.//
+
+.Main-container{
+        
+    background-color:$color-fondo;
+    font-family:$fuente-principal;
+
+     .Header{  
+        
+        display: flex;
+        color: white;
+        padding: 10px 30px;
+        height: 30px;
+        font-size: 14px;
+        margin-right: 50px;
+
+        .Menu-Mobile{
+            visibility: hidden;
+            margin-left: -22%;
+        }
+
+        .Menu img{
+            width: 30px;
+            margin-right: 45px;
+        }
+
+        .Menu{
+            width: 100%;
+            display: flex;
+            justify-content: space-around;  //Poniendo 18px de separacion me los dejaba todos uno al lado de otro.//
+        }
+        .Menu :hover{
+            transform: scale(1.2);
+        }
+    }
+
+    .Banner{
+
+        color: white;
+        background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
+        background-size: auto;
+        margin-top: 70px;
+        margin-bottom: 70px;
+        padding: 10px 30px;
+
+        .Title{
+            font-size: 16px; //Medida no respetada.//
+        }
+        .Subtitle{
+            font-size: 50px; //Medida no respetada.//
+            width: 20%;
+            font-family:'Permanent Marker', cursive;
+        }
+        .Info-Mobile{
+            visibility: hidden;
+        }
+        .Buttons{
+            display: flex;
+            font-size: 14px;
+              
+            .Play{
+                display: flex;
+                align-items: center;
+                border-style: outset;
+                margin-right: 14px;
+                input{
+                    background: inherit;
+                    background-color:transparent;
+                    border-style: none;
+                    color: white;
+                }
+            }
+            .List{
+                display: flex;
+                align-items: center;
+                border-style: outset;
+                margin-right: 14px;
+                input{
+                    background: inherit;
+                    background-color:transparent;
+                    border-style: none;
+                    color: white;
+                }
+            }
+            .Episodios{
+                visibility: hidden;
+            }
+        }
+        .Buttons .Play:hover{
+            background-color:rgb(199, 26, 14);
+        }
+        .Info{
+            font-size: 16px;
+            width: 20%;
+        }
+    }
+
+    .Series{
+
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+        font-size: 16px;
+        margin-left: 50px;
+
+        .Title{
+            margin-bottom: 10px;
+        }
+        .Imagenes{
+            display: flex;
+            font-size: 16px;
+            margin-bottom: 40px;
+            overflow: hidden;
+            .Preview{
+                margin-left: 4px;
+            }
+        }
+        .Imagenes :hover{
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media (max-width: 800px){
+
+    .Main-container{
+
+        font-family:$fuente-principal;
+        background-color:$color-fondo;
+
+        .Header{
+
+            .Menu-Mobile{
+                visibility: visible;
+                display: flex;
+                margin: 0%;
+                img{
+                    width: 30px;
+                }
+                .Icon{
+                    width: 30px;
+
+                    .Options{
+                        display: none;
+                        margin-left: -30px;
+                        display: flex;
+                        flex-direction: column;
+                        position: absolute;
+                        background-color: #141414;
+                        .Info{
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-around;
+                        }
+                    }
+                }
+            }    
+            .Menu{
+                visibility:hidden;
+            }
+        }
+
+        .Banner{
+
+            height: 150px;
+            color: white;
+            background-size: 95%;
+            background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px 20px;
+            
+            .Title{
+                visibility: hidden;
+            }
+            .Subtitle{
+                width: 100%;
+                font-size: 12px;
+                color:white;
+            }
+            .Info-Mobile{
+                color: #999;
+                visibility: visible;
+            }
+            .Buttons{
+                font-size: 12px;
+                //padding: 8px 16px;
+
+                .Episodios{
+                    visibility: visible;
+                    display: flex;
+                    align-items: center;
+                    border-style: outset;
+                    margin-left: -80px;
+
+                    input{
+                        background: inherit;
+                        background-color:transparent;
+                        border-style: none;
+                        color: white;
+                    }
+                }
+
+                .List{
+                    visibility: hidden;
+                }
+            }
+            .Info{
+                visibility: hidden;
+            }
+        }
+
+        .Series{
+            margin-left: 20px;
+            .Title{
+                color:#999;
+                font-size: 18px;
+                margin-bottom: 40px;
+            }
+            .Imagenes{
+                display: flex;
+                overflow: hidden;
+                font-size: 50px;
+            }
+            .Imagenes img{
+                width: 180px;
+            }
+        }
+
+    }
+}
