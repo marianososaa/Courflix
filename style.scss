@@ -1,124 +1,147 @@
 $color-fondo:  #141414;
-$fuente-principal: Helvetica Neue,Helvetica,Arial,sans-serif; 
+$fuente-principal:'Hind Madurai', sans-serif;
 
-// ¡La funcion transform: scale(1.5) fue googleada! //
+// ¡La funcion transform: scale(x) fue googleada! //
 // Hay medidas no respetadas ya que se me rompia el css.//
-
-.Main-container{
-        
+body{
     background-color:$color-fondo;
+}
+.main-container{
+        
     font-family:$fuente-principal;
 
-     .Header{  
+     .header{  
         
-        display: flex;
-        color: white;
-        padding: 10px 30px;
-        height: 30px;
+        height: 55px;
         font-size: 14px;
-        margin-right: 50px;
-
-        .Menu-Mobile{
-            visibility: hidden;
+        display: flex;
+        align-items: center;
+        color: white;
+        
+        .menu-mobile{
+            display: none;
             margin-left: -22%;
         }
 
-        .Menu img{
-            width: 30px;
+        .menu img{
+            height:30px;
             margin-right: 45px;
+            margin-left: 50px;
         }
 
-        .Menu{
+        .menu{
             width: 100%;
             display: flex;
-            justify-content: space-around;  //Poniendo 18px de separacion me los dejaba todos uno al lado de otro.//
-        }
-        .Menu :hover{
-            transform: scale(1.2);
+            ul{
+                display: flex;
+                li{
+                    margin-left: 18px;
+                    list-style: none;
+                }
+                li:hover{
+                    transform: scale(1.1);
+                }
+            }  
         }
     }
 
-    .Banner{
+    .banner{
 
         color: white;
         background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
-        background-size: auto;
-        margin-top: 70px;
-        margin-bottom: 70px;
-        padding: 10px 30px;
+        background-size: cover;
+        padding: 70px 0px 70px 30px;
 
-        .Title{
-            font-size: 16px; //Medida no respetada.//
+        .title{
+            p{
+                font-size: 15px;//Medida no respetada.
+                margin: 0px;
+            }
+            h2{
+                font-size: 70px;//Medida no respetada.
+                width: 30%;
+                margin: 0px;
+                padding-bottom: 24px;
+            }
         }
-        .Subtitle{
-            font-size: 50px; //Medida no respetada.//
-            width: 20%;
-            font-family:'Permanent Marker', cursive;
+        .info-mobile{
+            display: none;
         }
-        .Info-Mobile{
-            visibility: hidden;
-        }
-        .Buttons{
+        .buttons{
             display: flex;
             font-size: 14px;
-              
-            .Play{
-                display: flex;
-                align-items: center;
-                border-style: outset;
-                margin-right: 14px;
+            .play{
+                background-color: rgba(51, 51, 51, 0.4);
+                padding: 10px 30px;
+                border: none;
+                color: white;
+                margin-right: 10px;
+                border-radius: 5px;
                 input{
+                    font-size: 14px;
                     background: inherit;
                     background-color:transparent;
                     border-style: none;
                     color: white;
                 }
             }
-            .List{
-                display: flex;
-                align-items: center;
-                border-style: outset;
-                margin-right: 14px;
+            .list{
+                background-color: rgba(51, 51, 51, 0.4);
+                padding: 10px 30px;
+                border: none;
+                color: white;
+                border-radius: 5px;
                 input{
+                    font-size: 14px;
                     background: inherit;
                     background-color:transparent;
                     border-style: none;
                     color: white;
                 }
             }
-            .Episodios{
-                visibility: hidden;
+            .episodios{
+                display: none;
             }
         }
-        .Buttons .Play:hover{
-            background-color:rgb(199, 26, 14);
+        .buttons .play:hover{
+            background-color:rgb(155, 156, 156);
         }
-        .Info{
-            font-size: 16px;
-            width: 20%;
+        .buttons .list:hover{
+            background-color:rgb(155, 156, 156);
+        }
+        .info{
+            h5{
+                margin: 0px;
+                margin-top: 12px;
+                font-size: 20px;
+            }
+            h6{
+                margin: 0px;
+                margin-top: 10px;
+                font-size: 16px;
+                width: 30%;
+            }
         }
     }
 
-    .Series{
+    .series{
 
         font-family: Arial, Helvetica, sans-serif;
         color: white;
         font-size: 16px;
         margin-left: 50px;
 
-        .Title{
-            margin-bottom: 10px;
-        }
-        .Imagenes{
+        .imagenes{
             display: flex;
             font-size: 16px;
+            margin: 0px;
             margin-bottom: 40px;
             overflow: hidden;
-            .Preview{
+            .preview{
                 margin-left: 4px;
             }
         }
-        .Imagenes :hover{
+        .imagenes :hover{
             transform: scale(1.1);
         }
     }
@@ -126,31 +149,31 @@ $fuente-principal: Helvetica Neue,Helvetica,Arial,sans-serif;
 
 @media (max-width: 800px){
 
-    .Main-container{
+    .main-container{
 
         font-family:$fuente-principal;
         background-color:$color-fondo;
 
-        .Header{
+        .header{
 
-            .Menu-Mobile{
-                visibility: visible;
+            .menu-mobile{
+                height: 50px;
                 display: flex;
                 margin: 0%;
                 img{
-                    width: 30px;
+                    height:24px;
+                    margin-left: 10%;
                 }
-                .Icon{
-                    width: 30px;
-
-                    .Options{
-                        display: none;
-                        margin-left: -30px;
+                .icon{
+                    height: 24px;
+                    .options{
+                        height: 100vh;
+                        visibility: hidden;
                         display: flex;
                         flex-direction: column;
                         position: absolute;
                         background-color: #141414;
-                        .Info{
+                        .info{
                             display: flex;
                             align-items: center;
                             justify-content: space-around;
@@ -158,75 +181,85 @@ $fuente-principal: Helvetica Neue,Helvetica,Arial,sans-serif;
                     }
                 }
             }    
-            .Menu{
-                visibility:hidden;
+            .menu{
+                display:none;
             }
         }
 
-        .Banner{
+        .banner{
 
-            height: 150px;
+            height: 100px;
             color: white;
-            background-size: 95%;
+            background-size: cover;
             background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
-            margin-top: 20px;
-            margin-bottom: 20px;
-            padding: 20px 20px;
+            padding: 20px 20px 20px 20px;
             
-            .Title{
-                visibility: hidden;
+            .title{
+                display: none;
             }
-            .Subtitle{
-                width: 100%;
-                font-size: 12px;
-                color:white;
+            .info-mobile{
+                display: block;
+                h2{
+                    color: white;
+                    font-size: 20px;
+                    margin: 0px;
+                }
+                p{
+                    color:#999;
+                    font-size: 12px;
+                    margin: 0px;
+                }
             }
-            .Info-Mobile{
-                color: #999;
-                visibility: visible;
-            }
-            .Buttons{
-                font-size: 12px;
-                //padding: 8px 16px;
-
-                .Episodios{
-                    visibility: visible;
-                    display: flex;
-                    align-items: center;
-                    border-style: outset;
-                    margin-left: -80px;
-
+            .buttons{
+                height: 30px;
+                .play{
+                    background-color: rgba(206, 26, 26, 0.856);
+                    padding: 8px 16px;
                     input{
+                        font-size: 12px;
+                        color: white;
+                    }
+                    i{
+                        display: none;
+                    }
+                }
+                .episodios{
+                    display: block;
+                    padding: 8px 16px;
+                    border-style: groove;
+                    border-color: #999;
+                    border-radius: 5px;
+                    input{
+                        font-size: 12px;
+                        color: white;
                         background: inherit;
                         background-color:transparent;
                         border-style: none;
-                        color: white;
+                        text-align: center;
                     }
                 }
-
-                .List{
-                    visibility: hidden;
+                .list{
+                    display: none;
                 }
             }
-            .Info{
-                visibility: hidden;
+            .info{
+                display: none;
             }
         }
 
-        .Series{
-            margin-left: 20px;
-            .Title{
+        .series{
+            margin: auto;
+            .title{
                 color:#999;
                 font-size: 18px;
-                margin-bottom: 40px;
             }
-            .Imagenes{
+            .imagenes{
                 display: flex;
                 overflow: hidden;
-                font-size: 50px;
             }
-            .Imagenes img{
-                width: 180px;
+            .imagenes img{
+                width: 150px;
+                margin-left: 2%;
             }
         }
 

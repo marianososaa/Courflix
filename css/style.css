@@ -1,200 +1,237 @@
-.Main-container {
+body {
   background-color: #141414;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
-.Main-container .Header {
-  display: flex;
-  color: white;
-  padding: 10px 30px;
-  height: 30px;
+
+.main-container {
+  font-family: "Hind Madurai", sans-serif;
+}
+.main-container .header {
+  height: 55px;
   font-size: 14px;
-  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  color: white;
 }
-.Main-container .Header .Menu-Mobile {
-  visibility: hidden;
+.main-container .header .menu-mobile {
+  display: none;
   margin-left: -22%;
 }
-.Main-container .Header .Menu img {
-  width: 30px;
+.main-container .header .menu img {
+  height: 30px;
   margin-right: 45px;
+  margin-left: 50px;
 }
-.Main-container .Header .Menu {
+.main-container .header .menu {
   width: 100%;
   display: flex;
-  justify-content: space-around;
 }
-.Main-container .Header .Menu :hover {
-  transform: scale(1.2);
+.main-container .header .menu ul {
+  display: flex;
 }
-.Main-container .Banner {
+.main-container .header .menu ul li {
+  margin-left: 18px;
+  list-style: none;
+}
+.main-container .header .menu ul li:hover {
+  transform: scale(1.1);
+}
+.main-container .banner {
   color: white;
   background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
-  background-size: auto;
-  margin-top: 70px;
-  margin-bottom: 70px;
-  padding: 10px 30px;
+  background-size: cover;
+  padding: 70px 0px 70px 30px;
 }
-.Main-container .Banner .Title {
-  font-size: 16px;
+.main-container .banner .title p {
+  font-size: 15px;
+  margin: 0px;
 }
-.Main-container .Banner .Subtitle {
-  font-size: 50px;
-  width: 20%;
-  font-family: "Permanent Marker", cursive;
+.main-container .banner .title h2 {
+  font-size: 70px;
+  width: 30%;
+  margin: 0px;
+  padding-bottom: 24px;
 }
-.Main-container .Banner .Info-Mobile {
-  visibility: hidden;
+.main-container .banner .info-mobile {
+  display: none;
 }
-.Main-container .Banner .Buttons {
+.main-container .banner .buttons {
   display: flex;
   font-size: 14px;
 }
-.Main-container .Banner .Buttons .Play {
-  display: flex;
-  align-items: center;
-  border-style: outset;
-  margin-right: 14px;
+.main-container .banner .buttons .play {
+  background-color: rgba(51, 51, 51, 0.4);
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  border-radius: 5px;
 }
-.Main-container .Banner .Buttons .Play input {
+.main-container .banner .buttons .play input {
+  font-size: 14px;
   background: inherit;
   background-color: transparent;
   border-style: none;
   color: white;
 }
-.Main-container .Banner .Buttons .List {
-  display: flex;
-  align-items: center;
-  border-style: outset;
-  margin-right: 14px;
+.main-container .banner .buttons .list {
+  background-color: rgba(51, 51, 51, 0.4);
+  padding: 10px 30px;
+  border: none;
+  color: white;
+  border-radius: 5px;
 }
-.Main-container .Banner .Buttons .List input {
+.main-container .banner .buttons .list input {
+  font-size: 14px;
   background: inherit;
   background-color: transparent;
   border-style: none;
   color: white;
 }
-.Main-container .Banner .Buttons .Episodios {
-  visibility: hidden;
+.main-container .banner .buttons .episodios {
+  display: none;
 }
-.Main-container .Banner .Buttons .Play:hover {
-  background-color: #c71a0e;
+.main-container .banner .buttons .play:hover {
+  background-color: #9b9c9c;
 }
-.Main-container .Banner .Info {
+.main-container .banner .buttons .list:hover {
+  background-color: #9b9c9c;
+}
+.main-container .banner .info h5 {
+  margin: 0px;
+  margin-top: 12px;
+  font-size: 20px;
+}
+.main-container .banner .info h6 {
+  margin: 0px;
+  margin-top: 10px;
   font-size: 16px;
-  width: 20%;
+  width: 30%;
 }
-.Main-container .Series {
+.main-container .series {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   font-size: 16px;
   margin-left: 50px;
 }
-.Main-container .Series .Title {
-  margin-bottom: 10px;
-}
-.Main-container .Series .Imagenes {
+.main-container .series .imagenes {
   display: flex;
   font-size: 16px;
+  margin: 0px;
   margin-bottom: 40px;
   overflow: hidden;
 }
-.Main-container .Series .Imagenes .Preview {
+.main-container .series .imagenes .preview {
   margin-left: 4px;
 }
-.Main-container .Series .Imagenes :hover {
+.main-container .series .imagenes :hover {
   transform: scale(1.1);
 }
 
 @media (max-width: 800px) {
-  .Main-container {
-    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  .main-container {
+    font-family: "Hind Madurai", sans-serif;
     background-color: #141414;
   }
-  .Main-container .Header .Menu-Mobile {
-    visibility: visible;
+  .main-container .header .menu-mobile {
+    height: 50px;
     display: flex;
     margin: 0%;
   }
-  .Main-container .Header .Menu-Mobile img {
-    width: 30px;
+  .main-container .header .menu-mobile img {
+    height: 24px;
+    margin-left: 10%;
   }
-  .Main-container .Header .Menu-Mobile .Icon {
-    width: 30px;
+  .main-container .header .menu-mobile .icon {
+    height: 24px;
   }
-  .Main-container .Header .Menu-Mobile .Icon .Options {
-    display: none;
-    margin-left: -30px;
+  .main-container .header .menu-mobile .icon .options {
+    height: 100vh;
+    visibility: hidden;
     display: flex;
     flex-direction: column;
     position: absolute;
     background-color: #141414;
   }
-  .Main-container .Header .Menu-Mobile .Icon .Options .Info {
+  .main-container .header .menu-mobile .icon .options .info {
     display: flex;
     align-items: center;
     justify-content: space-around;
   }
-  .Main-container .Header .Menu {
-    visibility: hidden;
+  .main-container .header .menu {
+    display: none;
   }
-  .Main-container .Banner {
-    height: 150px;
+  .main-container .banner {
+    height: 100px;
     color: white;
-    background-size: 95%;
+    background-size: cover;
     background-image: url(https://www.whats-on-netflix.com/wp-content/uploads/2019/04/Z-Nation-Black-Summer-Season-2.jpg);
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px 20px;
+    padding: 20px 20px 20px 20px;
   }
-  .Main-container .Banner .Title {
-    visibility: hidden;
+  .main-container .banner .title {
+    display: none;
   }
-  .Main-container .Banner .Subtitle {
-    width: 100%;
+  .main-container .banner .info-mobile {
+    display: block;
+  }
+  .main-container .banner .info-mobile h2 {
+    color: white;
+    font-size: 20px;
+    margin: 0px;
+  }
+  .main-container .banner .info-mobile p {
+    color: #999;
+    font-size: 12px;
+    margin: 0px;
+  }
+  .main-container .banner .buttons {
+    height: 30px;
+  }
+  .main-container .banner .buttons .play {
+    background-color: rgba(206, 26, 26, 0.856);
+    padding: 8px 16px;
+  }
+  .main-container .banner .buttons .play input {
     font-size: 12px;
     color: white;
   }
-  .Main-container .Banner .Info-Mobile {
-    color: #999;
-    visibility: visible;
+  .main-container .banner .buttons .play i {
+    display: none;
   }
-  .Main-container .Banner .Buttons {
+  .main-container .banner .buttons .episodios {
+    display: block;
+    padding: 8px 16px;
+    border-style: groove;
+    border-color: #999;
+    border-radius: 5px;
+  }
+  .main-container .banner .buttons .episodios input {
     font-size: 12px;
-  }
-  .Main-container .Banner .Buttons .Episodios {
-    visibility: visible;
-    display: flex;
-    align-items: center;
-    border-style: outset;
-    margin-left: -80px;
-  }
-  .Main-container .Banner .Buttons .Episodios input {
+    color: white;
     background: inherit;
     background-color: transparent;
     border-style: none;
-    color: white;
+    text-align: center;
   }
-  .Main-container .Banner .Buttons .List {
-    visibility: hidden;
+  .main-container .banner .buttons .list {
+    display: none;
   }
-  .Main-container .Banner .Info {
-    visibility: hidden;
+  .main-container .banner .info {
+    display: none;
   }
-  .Main-container .Series {
-    margin-left: 20px;
+  .main-container .series {
+    margin: auto;
   }
-  .Main-container .Series .Title {
+  .main-container .series .title {
     color: #999;
     font-size: 18px;
-    margin-bottom: 40px;
   }
-  .Main-container .Series .Imagenes {
+  .main-container .series .imagenes {
     display: flex;
     overflow: hidden;
-    font-size: 50px;
   }
-  .Main-container .Series .Imagenes img {
-    width: 180px;
+  .main-container .series .imagenes img {
+    width: 150px;
+    margin-left: 2%;
   }
 }
 
