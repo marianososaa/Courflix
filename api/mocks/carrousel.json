@@ -1,0 +1,35 @@
+[
+    {
+      "carouselName": "Series",
+      "items": [
+        {
+          "img": "https://concepto.de/wp-content/uploads/2018/10/URL1-e1538664726127.jpg"
+        },
+        {
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-10.jpg"
+        }
+      ]
+    },
+    {
+        "carouselName": "Peliculas",
+        "items": [
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-11.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-8.jpg"
+          }
+        ]
+      },
+      {
+        "carouselName": "Continuar viendo como Mariano",
+        "items": [
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-7.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-6.jpg"
+          }
+        ]
+      }
+  ]
