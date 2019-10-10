@@ -1,0 +1,43 @@
+$color-background: #141414;
+
+.carousel-container{
+    background-color: $color-background;
+    color:white;
+    padding-left: 50px;
+    .name-container{
+        padding-bottom: 40px;
+        span{
+            font-size: 16px;
+        }
+        .image-container{
+            img:hover{
+                transform: scale(1.05);
+                transition: width 1s, height 1s;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 800px){
+
+    .carousel-container{
+        color:#999;
+        .name-container{
+            padding-bottom: 40px;
+            span{
+                font-size: 18px;
+            }
+            .image-container{
+                margin-right: 2%;
+                img{
+                    height: 110px;
+                    width: 140px;
+                }
+                img:hover{
+                    transform: scale(1);
+                }
+            }
+        }
+    }
+}

@@ -3,10 +3,22 @@
       "carouselName": "Series",
       "items": [
         {
-          "img": "https://concepto.de/wp-content/uploads/2018/10/URL1-e1538664726127.jpg"
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-1.jpg"
         },
         {
-          "img": "https://courseit.com.ar/static/courflix/assets/preview-10.jpg"
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-2.jpg"
+        },
+        {
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-3.jpg"
+        },
+        {
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-4.jpg"
+        },
+        {
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-5.jpg"
+        },
+        {
+          "img": "https://courseit.com.ar/static/courflix/assets/preview-6.jpg"
         }
       ]
     },
@@ -14,10 +26,22 @@
         "carouselName": "Peliculas",
         "items": [
           {
-            "img": "https://courseit.com.ar/static/courflix/assets/preview-11.jpg"
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-7.jpg"
           },
           {
             "img": "https://courseit.com.ar/static/courflix/assets/preview-8.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-9.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-10.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-11.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-12.jpg"
           }
         ]
       },
@@ -25,10 +49,16 @@
         "carouselName": "Continuar viendo como Mariano",
         "items": [
           {
-            "img": "https://courseit.com.ar/static/courflix/assets/preview-7.jpg"
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-13.jpg"
           },
           {
-            "img": "https://courseit.com.ar/static/courflix/assets/preview-6.jpg"
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-14.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-15.jpg"
+          },
+          {
+            "img": "https://courseit.com.ar/static/courflix/assets/preview-16.jpg"
           }
         ]
       }

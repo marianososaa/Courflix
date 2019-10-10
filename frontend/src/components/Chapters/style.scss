@@ -1,0 +1,19 @@
+.chapter-container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:#999;
+    .episode{
+        img{
+            height: 250px;
+            width: 300px;
+        }
+        h5{
+            display:flex;
+            justify-content: center;
+        }
+        p{
+            display:flex;
+            justify-content: center;
+        }
+    }
+}

@@ -29,6 +29,7 @@ class App extends React.Component{
         <Banner
           title="ORIGINAL DE NETFLIX"
           subtitle="BLACK SUMMER"
+          msubtitle = "2019   16+   1 Temporada"
           tdescription="Ve la temporada 1"
           idescription="Los muertos viven y cazan al predador de predadores.
           Sin refugios seguros ni personas confiables, solo queda sobrevivir."/>
